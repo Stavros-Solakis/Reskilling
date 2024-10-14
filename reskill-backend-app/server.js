@@ -43,7 +43,7 @@ axios
   });
 
   app.get('/posts/:postId', (req, res) => {
-    const post = posts.find((p) => p.id === parseInt(req.params.post.post.id));
+    const post = postsData.find((post) => post.id === parseInt(req.params.postId));
     res.json(post);
   });
   

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Section from '../components/Section'
+import MiddlePage from '../components/MiddlePage'
 import Hero from '../components/Hero'
 import RelatedArticles from '../components/RelatedArticles'
 
@@ -52,6 +53,9 @@ const Homepage = () => {
         </Section>
         <Section>
             <Hero post={posts[0]} photo={photos[0]}/>
+        </Section>
+        <Section>
+          <MiddlePage posts={posts.slice(1, 3)} photos={photos.slice(1, 4)} />
         </Section>
         <Section>
             <h2 className="font-inter text-4xl font-semibold leading-[44px] text-left mt-[120px] mb-8">Related articles or posts</h2>
