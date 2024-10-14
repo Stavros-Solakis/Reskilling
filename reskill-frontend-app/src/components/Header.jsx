@@ -11,7 +11,7 @@ const Header = () => {
             <li className='mr-12'><Link to="/">Page 2</Link></li>
             <li className='mr-12'><Link to="/">Page 3</Link></li>
           </ul>
-          <button className="bg-black text-white px-6 py-[14px] rounded-lg">Button</button>
+          <button className="bg-black text-white px-6 py-[14px] rounded-lg"><Link to="/">Button</Link></button>
         </nav>
     </header>
   );
